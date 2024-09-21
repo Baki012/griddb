@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Conversion {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter length in meters to convert to hand: ");
+        
+        double meters = scanner.nextDouble();
+        
+        double hand = meters * 2.28084; // Conversion factor from meters to hand
+        
+        System.out.println(meters + " meters is equal to " + hand + " hand");
+        
+        scanner.close(); // Close the scanner to prevent resource leaks
+    }
+}
